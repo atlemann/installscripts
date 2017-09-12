@@ -11,7 +11,7 @@ PORT=9091
 # Install requirements
 apt-get update && apt-get -y install wget default-jre unzip
 
-mkdir -p /opt/teamcity-agent
+mkdir -p ${TEAMCITY_AGENT_HOME}
 
 # Get the agent files from the server
 wget -O /tmp/buildAgent.zip ${TEAMCITY_SERVER}/update/buildAgent.zip

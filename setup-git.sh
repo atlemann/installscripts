@@ -13,7 +13,7 @@ git config --global alias.ec "config --global -e"
 # Git branch info in terminal prompt
 curl -fsSL https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh -o ~/.git-prompt.sh
 
-cat >> ~/.git-prompt.sh <<EOF
+cat >> ~/.bashrc <<EOF
 # Git branch info in terminal prompt
 . ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1

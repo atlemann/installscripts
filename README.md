@@ -23,7 +23,7 @@ Installs everything needed for F# .NET Core development by invoking:
 
 ## install-firacode-font.sh
 
-Installs the [FiraCode](https://github.com/tonsky/FiraCode) font in your system so it can be used in VSCode
+Prompts you if you want to install the [FiraCode](https://github.com/tonsky/FiraCode) font in your system and enable it in VSCode's user settings file.
 
 ## install-nodejs.sh
 

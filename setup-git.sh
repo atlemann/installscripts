@@ -8,7 +8,7 @@ git config --global alias.st status
 git config --global alias.br branch
 git config --global alias.bra "branch -a"
 git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
-git config --global alias.up "up = !git pull --rebase --prune $@ && git submodule update --init --recursive"
+git config --global alias.up '!git pull --rebase --prune $@ && git submodule update --init --recursive'
 git config --global alias.ec "config --global -e"
 
 # Git branch info in terminal prompt

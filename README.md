@@ -42,3 +42,7 @@ Adds a set of nice Git aliases to the global Git config as well as Git branch in
 ## setup-teamcity-agent.sh
 
 Downloads the TeamCity agent binaries from a given TeamCity server and registers itself to it with the given agent name.
+
+## install-kubectl.sh
+
+Installs the latest kubernetes command-line tool

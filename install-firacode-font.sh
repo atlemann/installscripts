@@ -4,11 +4,7 @@ read -p "Do you want to set up Fira Code font for VSCode? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    curl -fsSL https://github.com/tonsky/FiraCode/releases/download/1.204/FiraCode_1.204.zip -o firacode.zip
-    unzip firacode.zip -d firacode
-    mkdir -p /usr/local/share/fonts/firacode
-    sudo cp firacode/ttf/*.ttf /usr/local/share/fonts/firacode
-    sudo fc-cache -fv
+    sudo apt-get install fonts-firacode
 
     folder="$HOME/.config/Code/User"
     file="$folder/settings.json"

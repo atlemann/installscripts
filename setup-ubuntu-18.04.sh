@@ -20,10 +20,10 @@ code --install-extension Ionide.ionide-Paket
 code --install-extension Ionide.ionide-FAKE
 code --install-extension ms-vscode.csharp
 
-echo "Creating VSCode settings file $file."
-
 folder="$HOME/.config/Code/User"
 file="$folder/settings.json"
+
+echo "Creating VSCode settings file $file."
 
 mkdir -p $folder
 cat >> $file <<EOF

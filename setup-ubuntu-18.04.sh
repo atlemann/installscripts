@@ -11,9 +11,13 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
+# Mono
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+
 sudo apt-get -y install apt-transport-https
 sudo apt-get update
-sudo apt-get -y install dotnet-sdk-2.1 code fonts-firacode
+sudo apt-get -y install fsharp dotnet-sdk-2.1 code fonts-firacode
 
 code --install-extension Ionide.ionide-fsharp
 code --install-extension Ionide.ionide-Paket

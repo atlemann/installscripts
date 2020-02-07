@@ -17,7 +17,7 @@ echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | su
 
 sudo apt-get -y install apt-transport-https
 sudo apt-get update
-sudo apt-get -y install fsharp dotnet-sdk-2.1 code fonts-firacode
+sudo apt-get -y install fsharp dotnet-sdk-3.1 code fonts-firacode
 
 code --install-extension Ionide.ionide-fsharp
 code --install-extension Ionide.ionide-Paket
